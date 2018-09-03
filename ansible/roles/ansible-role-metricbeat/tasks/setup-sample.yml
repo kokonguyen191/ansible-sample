@@ -11,7 +11,7 @@
 - name: Copy Dockerfile template to host
   template:
     src: metricbeat-docker/Dockerfile.j2
-    dest: "{{ metricbeat_config_path }}"
+    dest: "{{ metricbeat_config_path }}/Dockerfile"
 - name: Copy Metricbeat configuration to host
   copy:
     src: "{{ inventory_dir }}/metricbeat.yml"
