@@ -1,0 +1,5 @@
+---
+- name: Deploy Metricbeat on Ubuntu machines.
+  hosts: ubuntu
+  roles:
+    - role: ansible-role-metricbeat

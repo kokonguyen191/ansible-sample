@@ -1,0 +1,6 @@
+FROM "docker.elastic.co/beats/metricbeat:{{ metricbeat_version }}"
+USER root
+RUN rm -f /usr/share/metricbeat/metricbeat.yml
+ADD metricbeat.yml "{{ metricbeat_container_config_file }}"
+RUN chmod -v o+r "{{ metricbeat_container_config_file }}"
+USER metricbeat

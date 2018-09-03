@@ -1,0 +1,6 @@
+- include: setup-sample.yml
+  tags: [ 'metricbeat', 'metricbeat.setup' ]
+  
+- include: start-sample.yml
+  tags: [ 'metricbeat', 'metricbeat.start' ]
+ 

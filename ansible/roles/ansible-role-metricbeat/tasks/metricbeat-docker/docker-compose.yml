@@ -1,0 +1,13 @@
+version: "2"
+services:
+  metricbeat-host:
+    build:
+      context: ./metricbeat
+    command: -system.hostfs=/hostfs
+    volumes:
+      - /proc:/hostfs/proc:ro
+      - /sys/fs/cgroup:/hostfs/sys/fs/cgroup:ro
+      - /:/hostfs:ro
+      - /var/run/docker.sock:/var/run/docker.sock
+    network_mode: host # Mandatory to monitor HOST filesystem, memory, processes,...
+    restart: always
