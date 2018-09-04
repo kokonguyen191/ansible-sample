@@ -32,10 +32,8 @@ metricbeat.modules:
   hosts: ["unix:///var/run/docker.sock"]
   period: 10s
 
-- module: kibana
-  metricsets: ["status"]
-  period: 10s
-  hosts: ["127.0.0.1:5601"]
+setup.kibana:
+  host: "127.0.0.1:5601"
 
 output.elasticsearch:
   hosts: ["127.0.0.1:9200"]
