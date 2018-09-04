@@ -1,0 +1,20 @@
+---  
+# EXAMPLE
+# Now you need to copy the necessary files to the host so that it has this structure
+# {{ metricbeat_path }}
+#   |-- docker-compose.yml
+#   |-- metricbeat
+#         |-- Dockerfile
+#         |-- metricbeat.yml
+# Note that {{ metricbeat_path }}/metricbeat does not exist and needs to be created.
+# Metricbeat configuration can be found at "{{ inventory_dir }}/metricbeat.yml"
+
+- name: Create necessary directory structure in host
+
+- name: Copy docker-compose.yml to host
+  
+- name: Copy Dockerfile template to host
+  
+- name: Copy Metricbeat configuration to host
+  
+ # Solution in setup-sample.yml

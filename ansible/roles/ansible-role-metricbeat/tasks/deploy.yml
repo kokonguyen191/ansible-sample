@@ -1,0 +1,4 @@
+---
+- name: Up Metricbeat Docker
+
+# Solution in deploy-sample.yml

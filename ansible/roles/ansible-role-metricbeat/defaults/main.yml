@@ -1,0 +1,15 @@
+---
+# This is where you define your variables.
+# Variables scope is restricted to where they are defined.
+# In this case, all variables here can be used by anything in ansible-role-metricbeat.
+
+metricbeat_path: /usr/share/metricbeat-docker
+
+# EXAMPLE
+# You need to define the Metricbeat version you want to use. A variable has been defined so you can follow the format.
+# Let's call this variable "metricbeat_version" and give it a value of 6.3.2
+
+# You also need to define where to put the configuration file when Metricbeat runs in a Docker container.
+# This path is by default "/usr/share/metricbeat/metricbeat.yml"
+# Let's create a variable called "metricbeat_container_config_file" with this value
+

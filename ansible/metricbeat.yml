@@ -35,11 +35,11 @@ metricbeat.modules:
 - module: kibana
   metricsets: ["status"]
   period: 10s
-  hosts: ["192.168.0.9:5601"]
+  hosts: ["127.0.0.1:5601"]
 
+output.elasticsearch:
+  hosts: ["127.0.0.1:9200"]
+  
 setup.template.settings:
   index.number_of_shards: 1
   index.codec: best_compression
-
-output.elasticsearch:
-  hosts: ["192.168.0.9:9200"]

@@ -1,3 +1,5 @@
+---
+
 - include: setup-sample.yml
   tags: [ 'metricbeat', 'metricbeat.setup' ]
   

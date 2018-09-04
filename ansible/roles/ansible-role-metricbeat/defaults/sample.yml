@@ -1,5 +1,0 @@
----
-metricbeat_version: 6.3.2
-metricbeat_path: /usr/share/metricbeat-docker
-metricbeat_config_path: "{{ metricbeat_path }}/metricbeat"
-metricbeat_container_config_file: /usr/share/metricbeat/metricbeat.yml

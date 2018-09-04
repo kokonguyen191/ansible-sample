@@ -1,0 +1,12 @@
+---
+- name: Up Metricbeat Docker
+  docker_service:
+    project_src: "{{ metricbeat_path }}"
+    project_name: "Metricbeat Docker"
+    build: no
+    files: docker-compose.yml
+    state: "{{ item }}"
+  become: yes
+  with_items:
+    - absent
+    - present

@@ -3,7 +3,7 @@
   file:
     path: "{{ metricbeat_path }}/metricbeat"
     state: directory
-
+    
 - name: Copy docker-compose.yml to host
   copy:
     src: metricbeat-docker/docker-compose.yml
@@ -11,8 +11,8 @@
 - name: Copy Dockerfile template to host
   template:
     src: metricbeat-docker/Dockerfile.j2
-    dest: "{{ metricbeat_config_path }}/Dockerfile"
+    dest: "{{ metricbeat_path }}/metricbeat/Dockerfile"
 - name: Copy Metricbeat configuration to host
   copy:
     src: "{{ inventory_dir }}/metricbeat.yml"
-    dest: "{{ metricbeat_config_path }}"
+    dest: "{{ metricbeat_path }}/metricbeat"

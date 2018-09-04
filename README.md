@@ -60,7 +60,7 @@ This stack will have one Elasticsearch and one Kibana installed on one host, and
         ansible all -m ping
         ```
         
-        or you can specify just a group of hosts with:
+    or you can specify just a group of hosts with:
         
         ```
         ansible <<group_name>> -m ping
