@@ -38,6 +38,8 @@ setup.kibana.host:
 output.elasticsearch:
   hosts: ["127.0.0.1:9200"]
   
+setup.dashboards.enabled: true
+  
 setup.template.settings:
   index.number_of_shards: 1
   index.codec: best_compression
